@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Weather Details</title>
+</head>
+<body>
+    <div class="weather-page">
+            <nav class="side-nav">
+                <input type="text" id="city-input" placeholder="Введите город" list="city-options" />
+                <datalist id="city-options">
+                    <option value="Минск"></option>
+                    <option value="Москва"></option>
+                    <option value="Вильнюс"></option>
+                    <option value="Варшава"></option>
+                    <option value="Нью-Йорк"></option>
+                </datalist>
+                <button class="city" onclick="changeCity()">Применить</button>
+                
+                <button onclick="showCurrentWeather()">Текущая погода</button>
+                <button onclick="showWeatherForecast()">Прогноз погоды</button>
+                <button onclick="showHistoricalData()">Исторические данные</button>
+            </nav>
+
+            <main id="content">
+                <h2>Выберите категорию, чтобы просмотреть данные.</h2>
+            </main>
+    </div>
+</body>
+</html>

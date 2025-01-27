@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Погода.бай</h1>
+        
+        <!-- Ввод города с автозаполнением -->
+        <input type="text" id="city" placeholder="Введите город" list="city-options" />
+        <datalist id="city-options">
+            <option value="Минск"></option>
+            <option value="Москва"></option>
+            <option value="Вильнюс"></option>
+            <option value="Варшава"></option>
+            <option value="Нью-Йорк"></option>
+        </datalist>
+        <button onclick="openWeatherPage()">Получить погоду</button>
+
+        <div id="error-message" style="color: red;"></div>
+    </div>
+</body>
+</html>
